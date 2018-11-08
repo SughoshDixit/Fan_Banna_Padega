@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<body background='hazard.jpg'>
+<body background='img/hazard.jpg'>
 <image src="Sughosh.jpg">
 <footer>
  <div style="position: relative">

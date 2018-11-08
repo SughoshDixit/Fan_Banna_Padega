@@ -1,49 +1,188 @@
-<html>
-<head>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-</head>
-<body>
-<section class="intro">
-    <div id="intro-slider" class="flexslider">
-        <ul class="slides">
-            <li>
-                <div class="slider-text">
-                    <h1>#Fan Banna Padega<span>.</span></h1>
-                    <p><i class='far fa-futbol fa-spin'></i>The Beautiful Game!!</p>
-                </div>
-                <div  class="slider-image">
-                    <img id="banner-img" style="margin: auto" src="img/fan.jpg">
-                </div>
-            </li>
-            <li>
-                <div class="slider-text">
-                    <h1>Player<span>.</span></h1>
-                    <p>Some people think football is a matter of life and death. I don't like that attitude. I can assure them it is much more serious than that!</p>
-                </div>
-                <div class="slider-image">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yXS8iNKqsCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </li>
-            <li>
-                <div class="slider-text">
-                    <h1>Coach<span>.</span></h1>
-                    <p>I am not a dreamer.I am a football romantic!</p>
-                </div>
-                <div class="slider-image">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yRsNVIO6-Pc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-            </li>
-			 <li>
-                <div class="slider-text">
-                    <h1>Fans<span>.</span></h1>
-                    <p>Being a fan,it's not important when you support your club when they win,it's important to boost them when they are losing.</p>
-                </div>
-                <div class="slider-image">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4HgowvboL7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-            </li>
-        </ul>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg" alt="Third slide">
+        </div>
     </div>
-</section>
-</body>
-</html>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+    <!--Controls-->
+    <div class="controls-top">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+    </div>
+    <!--/.Controls-->
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-col" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+<div class="card-columns">
+    <div class="col-4">
+        <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a class="btn btn-primary">Button</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4 clearfix d-none d-md-block">
+        <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a class="btn btn-primary">Button</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4 clearfix d-none d-md-block">
+        <div class="card mb-2">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a class="btn btn-primary">Button</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+            <div class="card-columns">
+                <div class="col-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--/.Second slide-->
+
+        <!--Third slide-->
+        <div class="carousel-item">
+            <div class="card-columns">
+
+                <div class="col-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                card's content.</p>
+                            <a class="btn btn-primary">Button</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--/.Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->

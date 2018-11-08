@@ -4,6 +4,7 @@
 	<title>
 	Pehle Fan Banna Padega
 	</title>
+      <link rel="stylesheet" href="styles/main.css">
 	<style>
 .center1 {
     text-align: center;
@@ -33,14 +34,16 @@
 
 		<header>
 		<h1 class="center4">Pehle Fan Banna Padega!!! </h1>
-			<center>
-			<p class="center1" href="#"><strong>Football Manager Click Here</strong></p>
+			<div class="text-center">
+
+
+			<p class="center1"><strong>Football Manager Click Here</strong></p>
 			<nav>
 				<ul>
-					<li><a href="#"><center><strong>Manager</center></strong></a></li>
+					<li><a href="manager_registration/m_register.php"><strong>Manager</center></strong></a></li>
 				</ul>
 			</nav>
-			<center>
+
 			<p class="center2"><strong>Football Player Click Here</strong></p>
 			<nav>
 				<ul>
@@ -53,7 +56,7 @@
 					<li><a href="fan_registration/f_register.php"><strong>Fan!!</strong></a></li>
 				</ul>
 			</nav>
-			</center>
+            </div>
 		</header>
 		 <footer>
 		 <div style="position: relative">

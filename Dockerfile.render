@@ -1,0 +1,27 @@
+FROM php:8.2-apache-bookworm
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends mariadb-server \
+    && docker-php-ext-install mysqli \
+    && a2enmod rewrite \
+    && printf '%s\n' \
+        'PassEnv DB_SERVER DB_USERNAME DB_PASSWORD DB_DATABASE' \
+        > /etc/apache2/conf-available/php-env.conf \
+    && a2enconf php-env \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY docker/mariadb-small.cnf /etc/mysql/mariadb.conf.d/99-small.cnf
+COPY docker/render-entrypoint.sh /usr/local/bin/render-entrypoint.sh
+RUN sed -i 's/\r$//' /usr/local/bin/render-entrypoint.sh \
+    && chmod +x /usr/local/bin/render-entrypoint.sh
+
+COPY . /var/www/html/
+RUN chown -R www-data:www-data /var/www/html
+
+ENV DB_SERVER=127.0.0.1
+ENV DB_USERNAME=root
+ENV DB_PASSWORD=fanbanna
+ENV DB_DATABASE=registration
+
+EXPOSE 80
+CMD ["/usr/local/bin/render-entrypoint.sh"]

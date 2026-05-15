@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: fan-banna-padega
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile.render
+    healthCheckPath: /
+    envVars:
+      - key: DB_SERVER
+        value: 127.0.0.1
+      - key: DB_USERNAME
+        value: root
+      - key: DB_DATABASE
+        value: registration
+      - key: DB_PASSWORD
+        generateValue: true

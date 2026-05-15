@@ -14,26 +14,19 @@ if (!function_exists('fbp_asset_url')) {
 
 if (!function_exists('fbp_img')) {
     /**
-     * Image URL for paths like img/foo.jpg. The repo does not ship img/; use Wikimedia + Picsum
-     * so deploys show real images without committing binaries.
+     * URL for images stored under /img (same paths as in templates: img/lfc.jpg, etc.).
+     * Width/height are accepted for call-site compatibility but not used — static files keep intrinsic size.
      */
     function fbp_img(string $filename, int $width = 1200, int $height = 600): string
     {
-        $base = basename($filename);
-        static $special = [
-            'football.jpg' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Football.svg/200px-Football.svg.png',
-        ];
-        if (isset($special[$base])) {
-            return $special[$base];
+        unset($width, $height);
+        $normalized = str_replace('\\', '/', $filename);
+        $base = basename($normalized);
+        if ($base === '') {
+            return fbp_asset_url('img/');
         }
-        $stem = pathinfo($filename, PATHINFO_FILENAME);
-        $seed = preg_replace('/[^a-zA-Z0-9]/', '', $stem) ?: 'pic';
-        return sprintf(
-            'https://picsum.photos/seed/fbp%s/%d/%d',
-            rawurlencode($seed),
-            max(1, $width),
-            max(1, $height)
-        );
+
+        return fbp_asset_url('img/' . $base);
     }
 }
 

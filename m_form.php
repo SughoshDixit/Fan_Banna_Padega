@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/includes/site.php'; ?>
 <!DOCTYPE html>
 
 <html>
@@ -7,7 +8,7 @@
 	
 	<meta charset="utf-8" />
 	
-	<link rel="stylesheet" href="m_form.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php echo fbp_h(fbp_asset_url('m_form.css')); ?>" type="text/css" media="all" />
 </head>
 
 <body>

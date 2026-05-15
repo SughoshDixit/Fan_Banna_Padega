@@ -1,6 +1,7 @@
+<?php require_once __DIR__ . '/includes/site.php'; ?>
 <div class="menu">
     <div class="logo">
-        <a class="roundbtn" href="index.php"><img class="logo" src="css/football.jpg" alt="logo"></a>
+        <a class="roundbtn" href="index.php"><img class="logo" src="<?php echo fbp_h(fbp_img('football.jpg', 160, 160)); ?>" alt="logo"></a>
     </div>
     <div class="ht"><i class="fa fa-ticket-alt">Hi there Gaffer!!</i> </div>
     <ul>

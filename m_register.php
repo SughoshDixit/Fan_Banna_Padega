@@ -1,9 +1,10 @@
 <?php include('m_server.php') ?>
+<?php require_once __DIR__ . '/includes/site.php'; ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Manager Registration</title>
-  <link rel="stylesheet" type="text/css" href="css/m_style1.css">
+<?php include __DIR__ . '/includes/manager-head-assets.php'; ?>
 </head>
 <body>
   <div class="header">
@@ -28,9 +29,9 @@
   	  <label>Confirm password</label>
   	  <input type="password" name="password_2">
   	</div>
-	<div class="input-group">
-  	  <label>Club</label>
-  	  <input type="club" name="club">
+  	<div class="input-group">
+  	<label>Club</label>
+  		<input type="text" name="club" value="<?php echo $club; ?>">
   	</div>
   	<div class="input-group">
   	  <button type="submit" class="btn" name="reg_user">Register</button>

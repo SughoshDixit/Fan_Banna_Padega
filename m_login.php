@@ -1,9 +1,10 @@
 <?php include('m_server.php') ?>
+<?php require_once __DIR__ . '/includes/site.php'; ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Registration system PHP and MySQL</title>
-  <link rel="stylesheet" type="text/css" href="css/m_style.css">
+  <title>Login</title>
+<?php include __DIR__ . '/includes/manager-head-assets.php'; ?>
 </head>
 <body>
   <div class="header">

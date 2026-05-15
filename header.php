@@ -2,9 +2,10 @@
 <header>
 </header>
 
+<?php require_once __DIR__ . '/includes/site.php'; ?>
 <div class="menu">
     <div class="logo">
-        <a class="roundbtn" href="index.php"><img class="logo" src="img/football.jpg" alt="logo"></a>
+        <a class="roundbtn" href="index.php"><img class="logo" src="<?php echo fbp_h(fbp_img('football.jpg', 160, 160)); ?>" alt="logo"></a>
     </div>
     <div class="ht"><i class="fa fa-ticket-alt">Hi there!!</i> </div>
     <ul>
@@ -36,7 +37,7 @@
 
                     <!--Image-->
                     <div class="view overlay z-depth-1-half">
-                        <img src="img/lfc.jpg" class="img-fluid" alt="">
+                        <img src="<?php echo fbp_h(fbp_img('lfc.jpg', 400, 300)); ?>" class="img-fluid" alt="Club">
                         <a href="">
                             <div class="mask rgba-white-light"></div>
                         </a>
@@ -50,7 +51,7 @@
 
                     <!--Image-->
                     <div class="view overlay z-depth-1-half">
-                        <img src="img/manu.jpg" class="img-fluid" alt="">
+                        <img src="<?php echo fbp_h(fbp_img('manu.jpg', 400, 300)); ?>" class="img-fluid" alt="Club">
                         <a href="">
                             <div class="mask rgba-white-light"></div>
                         </a>
@@ -64,7 +65,7 @@
 
                     <!--Image-->
                     <div class="view overlay z-depth-1-half">
-                        <img src="img/barca.jpg" class="img-fluid" alt="">
+                        <img src="<?php echo fbp_h(fbp_img('barca.jpg', 400, 300)); ?>" class="img-fluid" alt="Club">
                         <a href="">
                             <div class="mask rgba-white-light"></div>
                         </a>
@@ -78,7 +79,7 @@
 
                     <!--Image-->
                     <div class="view overlay z-depth-1-half">
-                        <img src="img/rm.png" class="img-fluid" alt="">
+                        <img src="<?php echo fbp_h(fbp_img('rm.png', 400, 300)); ?>" class="img-fluid" alt="Club">
                         <a href="">
                             <div class="mask rgba-white-light"></div>
                         </a>
@@ -92,7 +93,7 @@
 
                     <!--Image-->
                     <div class="view overlay z-depth-1-half">
-                        <img src="img/manc.png" class="img-fluid" alt="">
+                        <img src="<?php echo fbp_h(fbp_img('manc.png', 400, 300)); ?>" class="img-fluid" alt="Club">
                         <a href="">
                             <div class="mask rgba-white-light"></div>
                         </a>
@@ -106,7 +107,7 @@
 
                     <!--Image-->
                     <div class="view overlay z-depth-1-half">
-                        <img src="img/juve.png" class="img-fluid" alt="">
+                        <img src="<?php echo fbp_h(fbp_img('juve.png', 400, 300)); ?>" class="img-fluid" alt="Club">
                         <a href="">
                             <div class="mask rgba-white-light"></div>
                         </a>

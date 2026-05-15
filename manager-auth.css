@@ -1,0 +1,91 @@
+/* Manager login / register / home — styles referenced by missing css/m_style*.css */
+
+body {
+    font-size: 1rem;
+    margin: 0;
+    padding: 2rem 1rem;
+    background: #f5f5f5;
+}
+
+.header {
+    max-width: 32rem;
+    margin: 0 auto;
+    color: #fff;
+    background: #5f9ea0;
+    text-align: center;
+    padding: 1.25rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    border: 1px solid #b0c4de;
+    border-bottom: none;
+}
+
+form {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid #b0c4de;
+    background: #fff;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.content {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid #b0c4de;
+    background: #fff;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.input-group {
+    margin: 0.75rem 0;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 0.5rem 1.25rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #4285b4;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #3367a3;
+}
+
+.error {
+    color: #c00;
+    margin-bottom: 0.75rem;
+}
+
+.error.success,
+.success {
+    color: #0a0;
+}
+
+footer.label {
+    max-width: 32rem;
+    margin: 2rem auto 0;
+    text-align: center;
+}

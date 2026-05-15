@@ -1,29 +1,30 @@
+<?php require_once __DIR__ . '/includes/site.php'; ?>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="img/fan.jpg" alt="First slide">
+            <img class="d-block w-100" src="<?php echo fbp_h(fbp_img('fan.jpg')); ?>" alt="First slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/zlat.jpg" alt="Second slide">
+            <img class="d-block w-100" src="<?php echo fbp_h(fbp_img('zlat.jpg')); ?>" alt="Second slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/cristiano.jpg" alt="Third slide">
+            <img class="d-block w-100" src="<?php echo fbp_h(fbp_img('cristiano.jpg')); ?>" alt="Third slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/messi.jpg" alt="Third slide">
+            <img class="d-block w-100" src="<?php echo fbp_h(fbp_img('messi.jpg')); ?>" alt="Fourth slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/eden.jpg" alt="Third slide">
+            <img class="d-block w-100" src="<?php echo fbp_h(fbp_img('eden.jpg')); ?>" alt="Fifth slide">
         </div>
 
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/antoine.jpg" alt="Third slide">
+            <img class="d-block w-100" src="<?php echo fbp_h(fbp_img('antoine.jpg')); ?>" alt="Sixth slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/neymar.jpg" alt="Third slide">
+            <img class="d-block w-100" src="<?php echo fbp_h(fbp_img('neymar.jpg')); ?>" alt="Seventh slide">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="img/Cout.jpg" alt="Third slide">
+            <img class="d-block w-100" src="<?php echo fbp_h(fbp_img('Cout.jpg')); ?>" alt="Eighth slide">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

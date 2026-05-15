@@ -1,15 +1,13 @@
+<?php
+
+declare(strict_types=1);
+
+require_once __DIR__ . '/includes/site.php';
+
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football Management Tool</title>
-    <link rel="stylesheet" href="styles/fa/css/all.css">
-    <link rel="stylesheet" href="styles/flexslider.css">
-    <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/mdb.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/mdb.js"></script>
-    <script src="js/jquery.flexslider.js"></script>
-    <script src="js/init.js"></script>
+<?php include __DIR__ . '/includes/head-assets.php'; ?>
 </head>

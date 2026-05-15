@@ -12,16 +12,14 @@
   }
 ?>
 <?php
-include ('m_head.php');
-include('m_header.php');
+require_once __DIR__ . '/includes/site.php';
+$fbp_page_title = 'Home';
 ?>
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="css/m_style2.css">
-</head>
+<html lang="en">
+<?php include __DIR__ . '/m_head.php'; ?>
 <body>
+<?php include __DIR__ . '/m_header.php'; ?>
 
 <div class="header">
 	<h2>Home Page</h2>
@@ -47,7 +45,7 @@ include('m_header.php');
 </div>
 <footer class="label">
     <?php  if (isset($_SESSION['username'])) : ?>
-    <p> <a href="m_index.php?logout='1'" style="color: red;"><strong>logout</strong></a> </p>
+    <p> <a href="m_index.php?logout=1" style="color: red;"><strong>logout</strong></a> </p>
     <?php endif ?>
 </footer>
 		

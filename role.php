@@ -1,10 +1,11 @@
+<?php require_once __DIR__ . '/includes/site.php'; ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-	<title>
-	Pehle Fan Banna Padega
-	</title>
-      <link rel="stylesheet" href="styles/main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pehle Fan Banna Padega</title>
+      <link rel="stylesheet" href="<?php echo fbp_h(fbp_asset_url('main.css')); ?>">
 	<style>
 .center1 {
     text-align: left;
@@ -30,7 +31,7 @@
 	
 	</head>
 	
-	<body background=img/Paulo.png>
+	<body style="min-height: 100vh; margin: 0; background: url('<?php echo fbp_h(fbp_img('Paulo.png')); ?>') center/cover no-repeat fixed;">
 
 		<header>
 		<h1 class="center4">Pehle Fan Banna Padega!!! </h1>
@@ -39,20 +40,20 @@
 
 			<p class="center1"><strong>Football Manager Click Here</strong></p>
 			<nav>
-				<ul text-align="center">
-					<li><a href="manager_registration/m_register.php"></a><strong>Manager</strong></a></li>
+				<ul style="text-align:center">
+					<li><a href="m_register.php"><strong>Manager</strong></a></li>
 				</ul>
 			</nav>
 
 			<p class="center2"><strong>Football Player Click Here</strong></p>
 			<nav>
-				<ul text-align="center">
+				<ul style="text-align:center">
 					<li><a href="player_registration/p_register.php"><strong>Player</strong></a></li>
 				</ul>
 			</nav>
 			 <p class="center3"><strong>Football Fan? Click Here</strong></p>
 			<nav>
-				<ul text-align="center">
+				<ul style="text-align:center">
 					<li><a href="fan_registration/f_register.php"><strong>Fan!!</strong></a></li>
 				</ul>
 			</nav>
@@ -64,4 +65,4 @@
 		</div>
 	</footer> 
 	</body>
-</html>			
+</html>

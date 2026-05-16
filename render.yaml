@@ -5,6 +5,7 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile.render
     healthCheckPath: /
+    autoDeploy: true
     envVars:
       - key: DB_SERVER
         value: 127.0.0.1
